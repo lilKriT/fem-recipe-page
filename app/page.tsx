@@ -117,28 +117,30 @@ export default function Home() {
 
         {/* Nutrition */}
         <div>
-          <h2>Nutrition</h2>
-          <p>
+          <h2 className="text-3xl font-bold font-outfit text-brown-800">
+            Nutrition
+          </h2>
+          <p className="mt-4">
             The table below shows nutritional values per serving without the
             additional fillings.
           </p>
-          <table className="w-full table-fixed">
-            <tbody className="*:border-b *:border-brown-800">
+          <table className="w-full table-fixed mt-4">
+            <tbody className="*:border-b *:border-brown-800/50">
               <tr>
-                <td>Calories</td>
-                <td>277kcal</td>
+                <td className="pl-8 py-2">Calories</td>
+                <td className="font-bold text-brown-800">277kcal</td>
               </tr>
               <tr>
-                <td>Carbs</td>
-                <td>0g</td>
+                <td className="pl-8 py-2">Carbs</td>
+                <td className="font-bold text-brown-800">0g</td>
               </tr>
               <tr>
-                <td>Protein</td>
-                <td>20g</td>
+                <td className="pl-8 py-2">Protein</td>
+                <td className="font-bold text-brown-800">20g</td>
               </tr>
-              <tr>
-                <td>Fat</td>
-                <td>22g</td>
+              <tr className="border-b-0!">
+                <td className="pl-8 py-2">Fat</td>
+                <td className="font-bold text-brown-800">22g</td>
               </tr>
             </tbody>
           </table>
