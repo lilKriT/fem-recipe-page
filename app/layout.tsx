@@ -2,14 +2,14 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 
-const outfit = localFont({
-  src: "../public/outfit/Outfit-VariableFont_wght.ttf",
-  variable: "--font-outfit",
-});
-
 const youngSerif = localFont({
   src: "../public/young-serif/YoungSerif-Regular.ttf",
   variable: "--font-young-serif",
+});
+
+const outfit = localFont({
+  src: "../public/outfit/Outfit-VariableFont_wght.ttf",
+  variable: "--font-outfit",
 });
 
 export const metadata: Metadata = {
@@ -27,7 +27,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${outfit.className} antialiased`}>
+      <body
+        className={` ${youngSerif.className} ${outfit.className} antialiased`}
+      >
         <main>{children}</main>
       </body>
     </html>

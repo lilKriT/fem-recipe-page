@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-@theme {
+@theme inline {
   --color-stone-100: hsl(30, 54%, 90%);
   --color-stone-150: hsl(30, 18%, 87%);
   --color-stone-600: hsl(30, 10%, 34%);
@@ -10,6 +10,7 @@
   --color-rose-50: hsl(330, 100%, 98%);
 
   --font-outfit: "--font-outfit", "sans-serif";
+  --font-young-serif: "--font-young-serif", "sans-serif";
 }
 
 body {
