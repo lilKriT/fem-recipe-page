@@ -11,7 +11,7 @@ export default function Home() {
           alt="A tasty omelette! Enjoy."
           className="rounded-2xl"
         />
-        <h1 className="text-black text-5xl font-outfit font-bold">
+        <h1 className="text-stone-900 text-5xl font-outfit font-bold">
           Simple Omelette Recipe
         </h1>
 
@@ -23,17 +23,17 @@ export default function Home() {
         </p>
 
         {/* Preparation */}
-        <div>
-          <h2>Preparation time</h2>
-          <ul>
+        <div className="bg-rose-50 p-8 rounded-3xl">
+          <h2 className="text-rose-800 text-2xl font-bold">Preparation time</h2>
+          <ul className="mt-4 list-disc list-inside marker:text-pink-800 marker:text-base flex flex-col gap-2">
             <li>
-              <strong>Total:</strong> Approximately 10 minutes
+              <strong className="pl-4">Total:</strong> Approximately 10 minutes
             </li>
             <li>
-              <strong>Preparation:</strong> 5 minutes
+              <strong className="pl-4">Preparation:</strong> 5 minutes
             </li>
             <li>
-              <strong>Cooking:</strong> 5 minutes
+              <strong className="pl-4">Cooking:</strong> 5 minutes
             </li>
           </ul>
         </div>
