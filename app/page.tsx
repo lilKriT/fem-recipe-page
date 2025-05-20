@@ -40,15 +40,29 @@ export default function Home() {
 
         {/* Ingredients */}
         <div>
-          <h2>Ingredients</h2>
-          <ul>
-            <li>2-3 large eggs</li>
-            <li>Salt, to taste</li>
-            <li>Pepper, to taste</li>
-            <li>1 tablespoon of butter or oil</li>
-            <li>Pepper, to taste</li>
+          <h2 className="text-3xl font-bold font-outfit text-brown-800">
+            Ingredients
+          </h2>
+          <ul className="mt-4 list-disc list-inside marker:text-brown-800 marker:text-base flex flex-col gap-2">
             <li>
-              Optional fillings: cheese, diced vegetables, cooked meats, herbs
+              <span className="pl-4">2-3 large eggs</span>
+            </li>
+            <li>
+              <span className="pl-4">Salt, to taste</span>
+            </li>
+            <li>
+              <span className="pl-4">Pepper, to taste</span>
+            </li>
+            <li>
+              <span className="pl-4">1 tablespoon of butter or oil</span>
+            </li>
+            <li>
+              <span className="pl-4">Pepper, to taste</span>
+            </li>
+            <li>
+              <span className="pl-4">
+                Optional fillings: cheese, diced vegetables, cooked meats, herbs
+              </span>
             </li>
           </ul>
         </div>
