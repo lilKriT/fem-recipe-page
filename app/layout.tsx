@@ -24,7 +24,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={` ${outfit.className} antialiased`}>
+      <body className={`${outfit.className} antialiased`}>
         <main>{children}</main>
       </body>
     </html>
