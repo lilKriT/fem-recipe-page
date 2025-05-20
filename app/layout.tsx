@@ -15,6 +15,9 @@ const youngSerif = localFont({
 export const metadata: Metadata = {
   title: "FEM - Recipe page",
   description: "Created by lilKriT",
+  icons: {
+    icon: "favicon.png",
+  },
 };
 
 export default function RootLayout({

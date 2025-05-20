@@ -2,10 +2,16 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <section className="flex justify-center items-start min-h-dvh p-24">
-      <div className="bg-white p-4 rounded-2xl">
-        <Image src="/omelette.jpeg" width={1312} height={600} alt="asdf" />
-        <h1 className="text-black text-5xl font-outfit">
+    <section className="flex justify-center items-start min-h-dvh py-24">
+      <div className="container max-w-4xl bg-white p-8 rounded-4xl flex flex-col gap-8">
+        <Image
+          src="/omelette.jpeg"
+          width={1312}
+          height={600}
+          alt="A tasty omelette! Enjoy."
+          className="rounded-2xl"
+        />
+        <h1 className="text-black text-5xl font-outfit font-bold">
           Simple Omelette Recipe
         </h1>
 
@@ -89,23 +95,25 @@ export default function Home() {
             The table below shows nutritional values per serving without the
             additional fillings.
           </p>
-          <table className="w-full table-fixed *:border-b *:border-brown-800">
-            <tr>
-              <td>Calories</td>
-              <td>277kcal</td>
-            </tr>
-            <tr>
-              <td>Carbs</td>
-              <td>0g</td>
-            </tr>
-            <tr>
-              <td>Protein</td>
-              <td>20g</td>
-            </tr>
-            <tr>
-              <td>Fat</td>
-              <td>22g</td>
-            </tr>
+          <table className="w-full table-fixed">
+            <tbody className="*:border-b *:border-brown-800">
+              <tr>
+                <td>Calories</td>
+                <td>277kcal</td>
+              </tr>
+              <tr>
+                <td>Carbs</td>
+                <td>0g</td>
+              </tr>
+              <tr>
+                <td>Protein</td>
+                <td>20g</td>
+              </tr>
+              <tr>
+                <td>Fat</td>
+                <td>22g</td>
+              </tr>
+            </tbody>
           </table>
         </div>
       </div>
